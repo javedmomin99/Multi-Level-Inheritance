@@ -1,18 +1,18 @@
 #Multi-Level Inheritance : Parent --- Child --- GrandChild
 
-class Parent:
+class Parent:      #Passing Single Parameter, Thats Why NOT Using INIT Method
     def get_name(self,name):
         self.name = name
     def show_name(self):
         print("Name : ", self.name)
 
-class Child(Parent):
+class Child(Parent):      #Passing Single Parameter, Thats Why NOT Using INIT Method
     def get_age(self,age):
         self.age = age
     def show_age(self):
         print("Age :", self.age)
 
-class GrandChild(Child):
+class GrandChild(Child):    #Passing Single Parameter, Thats Why NOT Using INIT Method
     def get_gender(self,gender):
         self.gender = gender
     def show_gender(self):
